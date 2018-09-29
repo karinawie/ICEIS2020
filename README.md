@@ -43,4 +43,4 @@ $ sysbench
 --pgsql-password=password
 --pgsql-db=sbtest
 /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua
-run >> resultadoaamazonsysbench.txt Tabela 2. Parâmetros utilizados para a geração de cargas de testes
+run 
