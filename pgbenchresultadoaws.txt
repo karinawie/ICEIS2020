@@ -1,0 +1,165 @@
+# pgbench -t 100 -c 5 -S  bdpgbench -U postgres -n  >> resultado.txt
+
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 5
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 500/500
+latency average: 0.651 ms
+tps = 7681.435507 (including connections establishing)
+tps = 7858.274449 (excluding connections establishing)
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 5
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 500/500
+latency average: 0.650 ms
+tps = 7691.597699 (including connections establishing)
+tps = 7846.583598 (excluding connections establishing)
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 5
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 500/500
+latency average: 0.635 ms
+tps = 7872.156184 (including connections establishing)
+tps = 8031.818854 (excluding connections establishing)
+----------------------------------------------
+# pgbench -t 100 -c 10 -S  bdpgbench -U postgres -n  >> resultado.txt
+
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 1000/1000
+latency average: 1.383 ms
+tps = 7232.279108 (including connections establishing)
+tps = 7301.641774 (excluding connections establishing)
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 1000/1000
+latency average: 1.360 ms
+tps = 7351.589781 (including connections establishing)
+tps = 7422.852439 (excluding connections establishing)
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 1000/1000
+latency average: 1.371 ms
+tps = 7294.265249 (including connections establishing)
+tps = 7365.901914 (excluding connections establishing)
+----------------------------------------------
+# pgbench -t 100 -c 20 -S  bdpgbench -U postgres -n  >> resultado.txt
+
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 20
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 2000/2000
+latency average: 2.767 ms
+tps = 7228.880825 (including connections establishing)
+tps = 7263.092450 (excluding connections establishing)
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 20
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 2000/2000
+latency average: 2.720 ms
+tps = 7352.914144 (including connections establishing)
+tps = 7388.769919 (excluding connections establishing)
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 20
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 2000/2000
+latency average: 2.773 ms
+tps = 7211.521126 (including connections establishing)
+tps = 7246.618366 (excluding connections establishing)
+----------------------------------------------
+# pgbench -t 100 -c 40 -S  bdpgbench -U postgres -n  >> resultado.txt
+
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 40
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 4000/4000
+latency average: 5.701 ms
+tps = 7016.485232 (including connections establishing)
+tps = 7032.605047 (excluding connections establishing)
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 40
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 4000/4000
+latency average: 5.793 ms
+tps = 6904.646827 (including connections establishing)
+tps = 6920.702290 (excluding connections establishing)
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 40
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 4000/4000
+latency average: 5.713 ms
+tps = 7001.783704 (including connections establishing)
+tps = 7018.348815 (excluding connections establishing)
+----------------------------------------------
+# pgbench -t 100 -c 80 -S  bdpgbench -U postgres -n  >> resultado.txt
+
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 80
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 8000/8000
+latency average: 12.937 ms
+tps = 6183.847327 (including connections establishing)
+tps = 6191.387393 (excluding connections establishing)
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 80
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 8000/8000
+latency average: 13.007 ms
+tps = 6150.543785 (including connections establishing)
+tps = 6157.203251 (excluding connections establishing)
+transaction type: SELECT only
+scaling factor: 10
+query mode: simple
+number of clients: 80
+number of threads: 1
+number of transactions per client: 100
+number of transactions actually processed: 8000/8000
+latency average: 13.202 ms
+tps = 6059.862350 (including connections establishing)
+tps = 6066.276823 (excluding connections establishing)
+
