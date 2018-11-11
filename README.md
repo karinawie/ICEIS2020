@@ -3,11 +3,17 @@
 ## Command used to execute Pgbench:
 
 $ pgbench -t 100 -c 5 -S bdpgbench -U postgres -n 
+
 $ pgbench -c 20 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
+
 $ drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
+
 $ pgbench -c 40 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
+
 $ pgbench -c 80 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
+
 $ pgbench -c 160 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
+
 $ pgbench -c 320 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
 
 
