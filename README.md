@@ -6,8 +6,6 @@ $ pgbench -i -s 10 moodle -U moodle
 
 $ pgbench -c 20 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
 
-$ drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
-
 // increasing clients to 40, 80, 160, 280.
 
     -i -> required to invoke initialization mode.
