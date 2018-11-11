@@ -2,7 +2,7 @@
 
 ## Command used to execute Pgbench:
 
-$ pgbench -t 100 -c 5 -S bdpgbench -U postgres -n 
+$ pgbench -i -s 10 moodle -U moodle
 
 $ pgbench -c 20 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
 
