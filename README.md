@@ -28,4 +28,3 @@ $ sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --t
 
 //increasing threads to: 40, 80, 160, 250.
 
-Em seguida, é gerado cargas de testes. O comando gerará a carga de trabalho, que consta no script da penúltima linha, em 100.000 linhas de 24 tabelas com 64 threads de trabalho por 60 segundos no host 127.0.0.1. A cada 2 segundos, o sysbench irá reportar as estatísticas.
