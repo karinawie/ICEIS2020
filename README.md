@@ -1,8 +1,8 @@
-# Testes de Desempenho de Banco de Dados em Nuvem
+# Investigating the performance of Moodle database in cloud computing
 
-## Comando utilizado para executar o pgbench:
+## Command used to execute Pgbench:
 
-$ pgbench -t 100 -c 5 -S bdpgbench -U postgres -n >> resultado.txt
+$ pgbench -t 100 -c 5 -S bdpgbench -U postgres -n >> exitpgbench.txt
 
 A explicação do comando é a seguinte:
 
@@ -11,7 +11,7 @@ A explicação do comando é a seguinte:
     -S -> determina o tipo de transação, SELECT only
 
 
-## Comando utilizado para executar o sysbench:
+## Command used to execute Sysbench:
 
 O comando abaixo gera 100.000 linhas nas 24 tabelas dentro do banco sbtest.
 
@@ -43,4 +43,4 @@ $ sysbench
 --pgsql-password=password
 --pgsql-db=sbtest
 /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua
-run 
+run >> exitsysbench.txt
