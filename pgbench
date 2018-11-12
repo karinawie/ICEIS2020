@@ -1,20 +1,19 @@
-
+drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
 pgbench -i -s 10 moodle -U moodle
-pgbench -c 20 -j 2 -T 120 moodle -U moodle -n >> pgbench0511aws.txt
-drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
+pgbench -c 20 -j 2 -T 120 moodle -U moodle -n >> pgbench.txt
 
+drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
 pgbench -i -s 10 moodle -U moodle
-pgbench -c 40 -j 2 -T 120 moodle -U moodle -n >> resultado.txt
-drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
+pgbench -c 40 -j 2 -T 120 moodle -U moodle -n >> pgbench.txt
 
-pgbench -i -s 10 moodle -U postgres
-pgbench -c 80 -j 2 -T 120 moodle -U postgres -n >> resultado.txt
 drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
+pgbench -i -s 10 moodle -U postgres
+pgbench -c 80 -j 2 -T 120 moodle -U postgres -n >> pgbench.txt
 
-pgbench -i -s 10 moodle -U postgres
-pgbench -c 160 -j 2 -T 120 moodle -U postgres -n >> resultado.txt
 drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
+pgbench -i -s 10 moodle -U postgres
+pgbench -c 160 -j 2 -T 120 moodle -U postgres -n >> pgbench.txt
 
-pgbench -i -s 10 moodle -U postgres
-pgbench -c 320 -j 2 -T 120 moodle -U postgres -n >> resultado.txt
 drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
+pgbench -i -s 10 moodle -U postgres
+pgbench -c 280 -j 2 -T 120 moodle -U postgres -n >> pgbench.txt
