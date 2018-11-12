@@ -1,32 +1,29 @@
-
-executar sysbench:
-drop table sbtest1, sbtest2, sbtest3, sbtest4, sbtest5, sbtest6, sbtest7, sbtest8, sbtest9, sbtest10, sbtest11, sbtest12, sbtest13, sbtest14, sbtest15, sbtest16, sbtest17, sbtest18, sbtest19, sbtest20, sbtest21, sbtest22,sbtest23,sbtest24;     
+sysbench --db-driver=pgsql --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua cleanup
 
 sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua run        
 
 sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --threads=20 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua run>> sysbenchaws0911.txt   
 
 -------------------
-sysbench --db-driver=pgsql --report-interval=2 --oltp-table-size=100000 --oltp-tables-count=24 --threads=180 --time=120 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=password --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua cleanup
+sysbench --db-driver=pgsql --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua cleanup
 
 sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=password --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua run          
 
 sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --threads=40 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua run>> sysbenchaws0911.txt             
 -------------------
-sysbench --db-driver=pgsql --report-interval=2 --oltp-table-size=100000 --oltp-tables-count=24 --threads=180 --time=120 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=password --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua cleanup         
+sysbench --db-driver=pgsql --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua cleanup
 
 sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=password --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua run              
 
 sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --threads=80 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua run>> sysbenchaws0911.txt         
 --------------
-sysbench --db-driver=pgsql --report-interval=2 --oltp-table-size=100000 --oltp-tables-count=24 --threads=180 --time=120 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=password --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua cleanup
-            
+sysbench --db-driver=pgsql --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua cleanup            
 
 sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=password --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua run            
 
 sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --threads=160 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua run>> sysbenchaws0911.txt         
 ----------- 
-drop table sbtest1, sbtest2, sbtest3, sbtest4, sbtest5, sbtest6, sbtest7, sbtest8, sbtest9, sbtest10, sbtest11, sbtest12, sbtest13, sbtest14, sbtest15, sbtest16, sbtest17, sbtest18, sbtest19, sbtest20, sbtest21, sbtest22,sbtest23,sbtest24;         
+sysbench --db-driver=pgsql --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua cleanup
 
 sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=password --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua run            
 
