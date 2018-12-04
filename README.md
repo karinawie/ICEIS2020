@@ -18,7 +18,7 @@ $ pgbench -c 20 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
 
 ## Command used to execute Sysbench:
 
-//CONFERIR $ sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua cleanup
+$ sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua cleanup
 
 $ sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua run
 
