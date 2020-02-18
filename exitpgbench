@@ -13,7 +13,3 @@ pgbench -c 80 -j 2 -T 120 moodle -U postgres -n >> exitpgbench.txt
 drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
 pgbench -i -s 10 moodle -U postgres
 pgbench -c 160 -j 2 -T 120 moodle -U postgres -n >> exitpgbench.txt
-
-drop table pgbench_accounts, pgbench_branches, pgbench_history, pgbench_tellers;
-pgbench -i -s 10 moodle -U postgres
-pgbench -c 280 -j 2 -T 120 moodle -U postgres -n >> exitpgbench.txt
