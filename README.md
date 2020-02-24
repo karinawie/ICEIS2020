@@ -3,9 +3,11 @@
 ## Command used to execute Pgbench:
 
 The command creates tables in the Moodle database and creates data available to test 10 simultaneous connections:
+
 $ pgbench -i -s 10 moodle -U moodle
 
 The command runs for 120 seconds for 20 clients:
+
 $ pgbench -c 20 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
 
 // increasing clients to 40, 80, 160.
