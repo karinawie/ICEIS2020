@@ -2,13 +2,16 @@
 
 ## Command used to execute Pgbench:
 
+
 The command creates tables in the Moodle database and creates data available to test 10 simultaneous connections:
 
 $ pgbench -i -s 10 moodle -U moodle
 
+
 The command runs for 120 seconds for 20 clients:
 
 $ pgbench -c 20 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
+
 
 // increasing clients to 40, 80, 160.
 
@@ -22,13 +25,18 @@ $ pgbench -c 20 -j 2 -T 120 moodle -U moodle -n >> exitpgbench.txt
 
 ## Command used to execute Sysbench:
 
+
 $ sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua cleanup
+
 
 The command below generates 100000 rows per table for 24 tables within the Moodle database. 
 The data is prepared by a script called parallel\_prepare.lua, available at /usr/share/sysbench/tests/include/oltp\_legacy/:
+
 $ sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua run
 
+
 The following command will generate the workload from the script called /usr/share/sysbench/tests/include/oltp\_legacy/oltp.lua, in 100000 rows of 24 tables with 20 threads of work:
+
 $ sysbench --db-driver=pgsql --oltp-table-size=100000 --oltp-tables-count=24 --threads=20 --pgsql-host=127.0.0.1 --pgsql-port=5432 --pgsql-user=sbtest --pgsql-password=sbtest --pgsql-db=moodle /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua run>> exitsysbench.txt 
 
 //increasing threads to: 40, 80, 160.
