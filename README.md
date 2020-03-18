@@ -1,4 +1,4 @@
-# Investigating the performance of Moodle database in cloud computing
+# Investigating the Performance of Moodle Database Queries in Cloud Environments
 
 ## Command used to execute Pgbench:
 
